@@ -1,9 +1,9 @@
 .gallery {
-  margin: 20px;
   opacity: 0;
   transform: scale(0) rotate(0deg);
 
   transition: all 0.6s ease;
+  position: absolute;
 }
 
 body {
@@ -21,7 +21,7 @@ body {
   }
 
   .mainBtn {
-    margin-left: 62px;
+    margin-left: 65px;
   }
 
   .gallery.show {
@@ -35,11 +35,32 @@ body {
   }
 
   body {
+    margin-left: 100px;
+  }
+
+  .mainText {
+    margin-left: 20px;
+  }
+
+  .card.last {
+    padding: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+  }
+
+  .inf3 {
+    width: 100px;
+  }
+
+  .mainText2 {
     margin-left: 60px;
   }
 
-  header {
-    margin-left: 40px;
+  .card {
+    padding: 50px;
+    margin-right: 50px;
+    margin-left: 60px;
+    margin-bottom: 50px;
   }
 }
 
@@ -48,7 +69,7 @@ body {
     width: 768px;
   }
 
-  header {
+  .mainText {
     margin-left: 35px;
   }
 
@@ -65,6 +86,34 @@ body {
   .mainBtn {
     margin-left: 250px;
   }
+
+  .card.last {
+    width: 500px;
+
+    padding-left: 70px;
+  }
+
+  .inf3 {
+    width: 180px;
+    height: 90px;
+    display: inline-block;
+  }
+
+  .inf {
+    margin-left: 50px;
+  }
+
+  .mainText2 {
+    margin-left: 180px;
+  }
+
+  .card {
+    width: 180px;
+    padding: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    margin-left: 0px;
+  }
 }
 
 @media screen and (min-width: 769px) {
@@ -72,16 +121,49 @@ body {
     width: 1440px;
   }
 
-  header {
-    margin-left: 330px;
+  .mainText {
+    margin-left: 250px;
   }
 
   .gallery.show {
     width: 1300px;
+    margin-left: 0px;
   }
 
   .mainBtn {
-    margin-left: 540px;
+    margin-left: 480px;
+  }
+
+  body {
+    margin-left: 180px;
+  }
+
+  .card.last {
+    width: 670px;
+
+    padding-left: 330px;
+  }
+
+  .inf3 {
+    display: block;
+    width: 400px;
+    height: auto;
+  }
+
+  .inf {
+    margin-left: 50px;
+  }
+
+  .mainText2 {
+    margin-left: 420px;
+  }
+
+  .card {
+    width: 400px;
+    padding: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    margin-left: 0px;
   }
 }
 
@@ -89,6 +171,7 @@ body {
   opacity: 1;
   transform: scale(1);
   border-radius: 5%;
+  position: relative;
 }
 
 .mainBtn {
@@ -126,4 +209,33 @@ body {
 
 .buttone:active {
   transform: scale(0.95);
+}
+
+.card {
+  background: linear-gradient(135deg, #ff4fd8, #ffb0f8);
+  box-shadow: 0 8px 20px rgba(255, 79, 216, 0.4);
+  border: none;
+  border-radius: 14px;
+  padding: 50px;
+  display: inline-block;
+  transition: all 0.3s ease;
+  margin-right: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.card:hover {
+  transform: translateY(-4px) scale(1.05);
+}
+
+.inf3 {
+  color: white;
+}
+
+.card.last {
+  background-image: url("../image/bcgCard.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
 }
